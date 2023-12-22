@@ -1,4 +1,4 @@
-import { globalStyle, style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css';
 
 export const modalBackground = style({
   width: '100vw',
@@ -39,13 +39,6 @@ export const modalForm = style({
   flexDirection: 'column',
   flex: 1,
 });
-
-// globalStyle(`${modal} form`, {
-//     display: 'flex',
-//     flexDirection: 'column',
-//     flex: 1,
-
-// })
 
 export const modalBody = style({
   flex: 1,
