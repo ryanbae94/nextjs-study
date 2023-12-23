@@ -15,6 +15,7 @@ export const modalBackground = style({
 
 export const modal = style({
   background: '#ffffff',
+  position: 'relative',
   top: '5%',
   maxWidth: '80vw',
   minWidth: 600,
@@ -75,7 +76,7 @@ export const input = style({
 });
 
 export const modalFooter = style({
-  padding: '24px, 80px',
+  padding: '24px 80px',
 });
 
 export const actionButton = style({

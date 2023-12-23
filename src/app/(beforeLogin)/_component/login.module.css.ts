@@ -23,15 +23,12 @@ export const modal = style({
   display: 'flex',
   flexDirection: 'column',
   height: 450,
-  alignItems: 'space-around',
-  justifyContent: 'center',
 });
 
 export const modalHeader = style({
-  padding: '36px, 80px, 20px',
+  padding: '36px 80px 20px',
   fontSize: 31,
   fontWeight: 'bold',
-  textAlign: 'center',
 });
 
 export const modalForm = style({
