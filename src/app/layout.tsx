@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import * as styles from './page.css';
 
 // layout => 페이지의 기본 구조 (페이지 라우팅이 바뀌어도 그대로 유지되는 구조)
 const inter = Inter({ subsets: ['latin'] });
@@ -18,9 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className={styles.container}>{children}</div>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
