@@ -26,7 +26,6 @@ export const leftSectionFixed = style({
   position: 'fixed',
   height: '100dvh',
   width: 'inherit',
-  backgroundColor: 'orange',
   display: 'flex',
   flexDirection: 'column',
 });
@@ -36,7 +35,6 @@ globalStyle(`${leftSectionFixed} nav`, {
 });
 
 export const rightSectionWrapper = style({
-  backgroundColor: 'blue',
   display: 'flex',
   alignItems: 'flex-start',
   height: '100dvh',
@@ -124,4 +122,17 @@ export const postButton = style({
   ':hover': {
     backgroundColor: 'rgb(26, 140, 216)',
   },
+});
+
+export const followRecommend = style({
+  fontSize: 20,
+  fontWeight: 'bold',
+  backgroundColor: 'rgb(247, 249, 249)',
+  borderRadius: 16,
+  margin: '12px 0',
+  padding: '12px 16px',
+});
+
+globalStyle(`${followRecommend} h3`, {
+  paddingBottom: 12,
 });
