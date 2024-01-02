@@ -57,7 +57,6 @@ export const rightSectionInner = style({
 export const main = style({
   width: 600,
   height: '200dvh',
-  backgroundColor: 'white',
 });
 
 export const search = style({
