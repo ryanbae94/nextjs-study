@@ -1,8 +1,8 @@
 'use server';
 import { redirect } from 'next/navigation';
 
-export default async (prevState: any, formData: FormData) => {
-  // 서버 코드는 브라우저에 노출이 되지 않음
+export default async function signup(prevState: any, formData: FormData) {
+  // 서버 코드는 브라우저에 노출이 되지 않음..
   'use server';
   if (!formData.get('id') || !(formData.get('id') as string)?.trim()) {
     return { message: 'no_id' };
@@ -44,4 +44,4 @@ export default async (prevState: any, formData: FormData) => {
 
   // redirect는 try catch 안에 쓰면 안됨
   if (shouldRedirect) redirect('/home');
-};
+}
